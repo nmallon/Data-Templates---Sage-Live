@@ -1,0 +1,2741 @@
+{
+  "Units": [],
+  "TradeDocumentTypes": [],
+  "TradeDocumentTags": [],
+  "TradeDocuments": [],
+  "TradeDocumentItemTags": [],
+  "TradeDocumentItems": [],
+  "Templates": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_COR_Template__c"
+      },
+      "s2cor__Legislation__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Legislation__c"
+        },
+        "s2cor__UID__c": "GB"
+      },
+      "Name": "UK SEPA Payments",
+      "s2cor__Author__c": "Sage Live",
+      "s2cor__Business_Type__c": "General",
+      "s2cor__Change_Notes__c": "Some few changes in rules",
+      "s2cor__Description__c": "This template contains all the feed broker, feeds and rules to generate a SEPA Credit Transfer. Payments to suppliers and SEPA Direct Debits to customers. SEPA (Single Euro Payments Area) uses a standard format for payments between companies in most European countries.",
+      "s2cor__Hash__c": "ePCPZ0qTWkr7Gg/65ASWhKRQiAY=",
+      "s2cor__Is_System_Generated__c": true,
+      "s2cor__Language__c": "en",
+      "s2cor__Type__c": "Normal",
+      "s2cor__UID__c": "SEPA_UK_Payments",
+      "s2cor__Version__c": 1
+    }
+  ],
+  "TaxTreatments": [],
+  "TaxRates": [],
+  "TaxCodes": [],
+  "Tags": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Tag__c"
+      },
+      "s2cor__Associated_Ledger_Account__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Ledger_Account__c"
+        },
+        "s2cor__UID__c": "Bank_Deposit_Account"
+      },
+      "s2cor__UID__c": "00D24000000cQsLa0V24000004HH8Z",
+      "s2cor__Dimension__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Dimension__c"
+        },
+        "s2cor__UID__c": "PayInstrumentType"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "Name": "SEPA Credit Transfer",
+      "s2cor__Active__c": true,
+      "s2cor__Base_Budget__c": null,
+      "s2cor__Base_Credit_Limit__c": null,
+      "s2cor__Base_Credit__c": 0,
+      "s2cor__Base_Debit__c": 0,
+      "s2cor__Current_Exchange_Rate__c": null,
+      "s2cor__End_Date__c": null,
+      "s2cor__Foreign_Credit__c": 0,
+      "s2cor__Foreign_Debit__c": 0,
+      "s2cor__Initial_Exchange_Rate__c": null,
+      "s2cor__Is_Public__c": false,
+      "s2cor__Level_1__c": null,
+      "s2cor__Level_2__c": null,
+      "s2cor__Level_3__c": null,
+      "s2cor__Protect_Posting__c": false,
+      "s2cor__Reconciled_Date__c": null,
+      "s2cor__Start_Date__c": null,
+      "s2cor__Unit_Credit__c": 0,
+      "s2cor__Unit_Debit__c": 0,
+      "s2cor__Unit_Value__c": 0,
+      "s2cor__Code__c": null,
+      "s2cor__Latest_Transaction_Date__c": "2016-12-20"
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Tag__c"
+      },
+      "s2cor__Associated_Ledger_Account__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Ledger_Account__c"
+        },
+        "s2cor__UID__c": "Bank_Deposit_Account"
+      },
+      "s2cor__UID__c": "00D36000001HWxLa2e36000000zF2i",
+      "s2cor__Dimension__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Dimension__c"
+        },
+        "s2cor__UID__c": "CustomerReceiptType"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "Name": "SEPA Direct Debit",
+      "s2cor__Active__c": true,
+      "s2cor__Base_Budget__c": null,
+      "s2cor__Base_Credit_Limit__c": null,
+      "s2cor__Base_Credit__c": 0,
+      "s2cor__Base_Debit__c": 0,
+      "s2cor__Current_Exchange_Rate__c": null,
+      "s2cor__End_Date__c": null,
+      "s2cor__Foreign_Credit__c": 0,
+      "s2cor__Foreign_Debit__c": 0,
+      "s2cor__Initial_Exchange_Rate__c": null,
+      "s2cor__Is_Public__c": true,
+      "s2cor__Level_1__c": null,
+      "s2cor__Level_2__c": null,
+      "s2cor__Level_3__c": null,
+      "s2cor__Protect_Posting__c": false,
+      "s2cor__Reconciled_Date__c": null,
+      "s2cor__Start_Date__c": null,
+      "s2cor__Unit_Credit__c": 0,
+      "s2cor__Unit_Debit__c": 0,
+      "s2cor__Unit_Value__c": 0,
+      "s2cor__Code__c": null,
+      "s2cor__Latest_Transaction_Date__c": "2016-11-15"
+    }
+  ],
+  "TagLedgerAccounts": [],
+  "RuleSetsbyFeed": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_RuleSetsbyFeed__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed__c"
+        },
+        "s2cor__UID__c": "00D58000000aqbla0R58000003HP59_v56"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "s2cor__UID__c": "00D58000000aqbla0y58000006ZiXe"
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_RuleSetsbyFeed__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed__c"
+        },
+        "s2cor__UID__c": "00D58000000aqbla0R580000042DLO_v56"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "s2cor__UID__c": "00D58000000aqbla0y58000006ZpZC"
+    }
+  ],
+  "RelatedTags": [],
+  "Properties": [],
+  "PostingRules": [],
+  "PostingRuleDimensions": [],
+  "ObjectMaps": [],
+  "ListViews": [],
+  "Legislations": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_COR_Legislation__c"
+      },
+      "s2cor__UID__c": "GB",
+      "Name": "United Kingdom",
+      "s2cor__Is_EU__c": false,
+      "s2cor__Version__c": "1"
+    }
+  ],
+  "LedgerAnalysisRows": [],
+  "LedgerAnalysisColumns": [],
+  "LedgerAnalyses": [],
+  "LedgerAccounts": [],
+  "LedgerAccountRules": [],
+  "JournalTypes": [],
+  "JournalTags": [],
+  "Journals": [],
+  "JournalItemTags": [],
+  "JournalItems": [],
+  "Jobs": [],
+  "Feeds": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Input_Journal_Type__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Journal_Type__c"
+        },
+        "s2cor__UID__c": "CustomerReceipts_JT"
+      },
+      "s2cor__UID__c": "00D58000000aqbla0R58000003HP59_v56",
+      "s2cor__Input_Dimension__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Dimension__c"
+        },
+        "s2cor__UID__c": "CustomerReceiptType"
+      },
+      "s2cor__Input_Tag__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Tag__c"
+        },
+        "s2cor__UID__c": "00D36000001HWxLa2e36000000zF2i"
+      },
+      "Name": "SEPA DD",
+      "s2cor__Area__c": null,
+      "s2cor__Configuration__c": "{\"mandateDimension\":\"Mandate\",\"customerDimension\":\"Customer\",\"billNumberDimension\":\"SalesInvoiceNumber\",\"bankTag\":null,\"bankDimension\":\"BankAccount\"}",
+      "s2cor__Last_Error__c": "Finished with Success",
+      "s2cor__Last_Run__c": "2016-12-20T08:53:43.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Input_Journal_Type__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Journal_Type__c"
+        },
+        "s2cor__UID__c": "PaymentsToSuppliers_JT"
+      },
+      "s2cor__UID__c": "00D58000000aqbla0R580000042DLO_v56",
+      "s2cor__Input_Dimension__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Dimension__c"
+        },
+        "s2cor__UID__c": "PayInstrumentType"
+      },
+      "s2cor__Input_Tag__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Tag__c"
+        },
+        "s2cor__UID__c": "00D24000000cQsLa0V24000004HH8Z"
+      },
+      "Name": "SEPA CT",
+      "s2cor__Area__c": null,
+      "s2cor__Configuration__c": "{\"vendorDimension\":\"Supplier\",\"outputFolder\":null,\"billNumberDimension\":\"BillNumber\",\"bankDimension\":\"BankAccount\"}",
+      "s2cor__Last_Error__c": null,
+      "s2cor__Last_Run__c": null
+    }
+  ],
+  "FeedRuleSets": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "Name": "SEPA Credit Transfer XML Definition Rule Set  - Standard",
+      "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard",
+      "s2cor__Metadata__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "Name": "SEPA Direct Debit XML Definition Rule Set  - Standard",
+      "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard",
+      "s2cor__Metadata__c": null
+    }
+  ],
+  "FeedBrokers": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed_Broker__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "Name": "SEPA Credit Transfer",
+      "s2cor__Class_Name__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon",
+      "s2cor__Configuration__c": null,
+      "s2cor__Description__c": null,
+      "s2cor__Logging__c": false,
+      "s2cor__Namespace__c": null,
+      "s2cor__Sensitive_Configuration__c": false,
+      "s2cor__Status__c": "Ready",
+      "s2cor__Type__c": "SEPA Credit Transfer",
+      "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon",
+      "s2cor__Version__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Feed_Broker__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "Name": "SEPA Direct Debit",
+      "s2cor__Class_Name__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon",
+      "s2cor__Configuration__c": null,
+      "s2cor__Description__c": null,
+      "s2cor__Logging__c": false,
+      "s2cor__Namespace__c": null,
+      "s2cor__Sensitive_Configuration__c": false,
+      "s2cor__Status__c": "Ready",
+      "s2cor__Type__c": "SEPA Direct Debit",
+      "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon",
+      "s2cor__Version__c": "1.0"
+    }
+  ],
+  "FeedBrokerRules": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000077lLh",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "001 CstmrDrctDbtInitn.GrpHdr.MsgId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.MsgId",
+      "s2cor__Property_Value__c": "Journal.Id",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000077lQk",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "018 CstmrDrctDbtInitn.PmtInf.CdtrAcct.ID.IBAN",
+      "s2cor__Description__c": "Creditor Iban",
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.CdtrAcct.Id.IBAN",
+      "s2cor__Property_Value__c": "BankAccount.s2cor__IBAN__c",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Lt1",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "002 CstmrDrctDbtInitn.GrpHdr.CreDtTm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.CreDtTm",
+      "s2cor__Property_Value__c": "FormattedDate",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078MEC",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "003 CstmrDrctDbtInitn.GrpHdr.NbOfTxs",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.NbOfTxs",
+      "s2cor__Property_Value__c": "Journal.s2cor__Total_Items__c",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078MoL",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "004 CstmrDrctDbtInitn.GrpHdr.CtrlSum",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.CtrlSum",
+      "s2cor__Property_Value__c": "Journal.s2cor__Total_Gross__c",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078MpJ",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "005 CstmrDrctDbtInitn.GrpHdr.InitgPty.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.InitgPty.Nm",
+      "s2cor__Property_Value__c": "Journal.s2cor__Company__r.Name",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078MsS",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "006 CstmrDrctDbtInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Id",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Id",
+      "s2cor__Property_Value__c": "Journal.s2cor__Company__r.s2cor__VAT_Registration_Number__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Mw5",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "007 CstmrDrctDbtInitn.GrpHdr.InitgPty.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.GrpHdr.InitgPty.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078PaQ",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "012 CstmrDrctDbtInitn.PmtInf.CtrlSum",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.CtrlSum",
+      "s2cor__Property_Value__c": "TotalAmount",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Pd1",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "013 CstmrDrctDbtInitn.PmtInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078PFC",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "010 CstmrDrctDbtInitn.PmtInf.BtchBookg",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.BtchBookg",
+      "s2cor__Property_Value__c": "\"false\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Pgd",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "014 CstmrDrctDbtInitn.PmtInf.PmtTpInf.LclInstrm.Cd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.PmtTpInf.LclInstrm.Cd",
+      "s2cor__Property_Value__c": "\"CORE\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078POB",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "008 CstmrCdtTrfInitn.PmtInf.PmtInfId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.PmtInfId",
+      "s2cor__Property_Value__c": "Journal.Id",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Poo",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "015 CstmrDrctDbtInitn.PmtInf.PmtTpInf.SeqTp",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.PmtTpInf.SeqTp",
+      "s2cor__Property_Value__c": "DDType",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": "{!bucket.mandate_type}"
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078PRO",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "009 CstmrDrctDbtInitn.PmtInf.PmtMtd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.PmtMtd",
+      "s2cor__Property_Value__c": "\"DD\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078PYU",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "011 CstmrDrctDbtInitn.PmtInf.NbOfTxs",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.NbOfTxs",
+      "s2cor__Property_Value__c": "NumOfTransactions",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078rlH",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "017 CstmrDrctDbtInitn.PmtInf.Cdtr.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.Cdtr.Nm",
+      "s2cor__Property_Value__c": "Journal.s2cor__Company__r.Name",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078SBP",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "016 CstmrDrctDbtInitn.PmtInf.ReqdColltnDt",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.ReqdColltnDt",
+      "s2cor__Property_Value__c": "FormatDateTimeGMT(Journal.s2cor__Date__c,\"yyyy-MM-dd\")",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": "Required Collection Date - get this from the mandate?"
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078Tnl",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "019 CstmrDrctDbtInitn.PmtInf.CdtrAgt.FinInstnId.BIC",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.CdtrAgt.FinInstnId.BIC",
+      "s2cor__Property_Value__c": "BankAccount.s2cor__BIC__c",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078U0f",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "020 CstmrDrctDbtInitn.PmtInf.CdtrSchmeId.Id.PrvtId.Othr.Id",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.CdtrSchmeId.Id.PrvtId.Othr.Id",
+      "s2cor__Property_Value__c": "BankAccount.Name",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078U8t",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "021 CstmrDrctDbtInitn.PmtInf.CdtrSchmeId.Id.PrvtId.Othr.SchmeNm.Prtry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.CdtrSchmeId.Id.PrvtId.Othr.SchmeNm.Prtry",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Group",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078yN7",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "022 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.PmtId.InstrId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.PmtId.InstrId",
+      "s2cor__Property_Value__c": "\"DIRECT DEBIT\"",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078znR",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "023 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.PmtId.EndToEndId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.PmtId.EndToEndId",
+      "s2cor__Property_Value__c": "BillNumber.Name",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000078zpN",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "024 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.InstdAmt",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.InstdAmt",
+      "s2cor__Property_Value__c": "Item.s2cor__Amount__c",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G58000007902T",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "025 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.InstdAmt.[Ccy]",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.InstdAmt.[Ccy]",
+      "s2cor__Property_Value__c": "Currency",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G58000007907f",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "026 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.MndtId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.MndtId",
+      "s2cor__Property_Value__c": "Mandate.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000791et",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "027 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.DtOfSgntr",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.DtOfSgntr",
+      "s2cor__Property_Value__c": "FormatDateTimeGMT(Mandate.s2cor__Start_Date__c,\"yyyy-MM-dd\")",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000791ga",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "028 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.AmdmntInd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DrctDbtTx.MndtRltdInf.AmdmntInd",
+      "s2cor__Property_Value__c": "\"false\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000791t6",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "029 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DbtrAgt.FinInstnId.Bic",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DbtrAgt.FinInstnId.BIC",
+      "s2cor__Property_Value__c": "BankAccount.s2cor__BIC__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000791tr",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "030 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Nm",
+      "s2cor__Property_Value__c": "Customer.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000792N9",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "032 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.SchmeNm.Prtry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.SchmeNm.Prtry",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000792Ns",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "033 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.Issr",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.Issr",
+      "s2cor__Property_Value__c": "\"ISO\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G5800000792sr",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "034 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DbtrAcct.Id.IBAN",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.DbtrAcct.Id.IBAN",
+      "s2cor__Property_Value__c": "BankAccount.s2cor__IBAN__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dcM6a0G580000079a8E",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Direct_Debit_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Direct_Debit_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "031 CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.Id",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrDrctDbtInitn.PmtInf.DrctDbtTxInf.Dbtr.Id.PrvtId.Othr.Id",
+      "s2cor__Property_Value__c": "BankAccount.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002lk1t",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "001 CstmrCdtTrfInitn.GrpHdr.MsgId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.MsgId",
+      "s2cor__Property_Value__c": "Journal.Id",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002lk2m",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "002 CstmrCdtTrfInitn.GrpHdr.CreDtTm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.CreDtTm",
+      "s2cor__Property_Value__c": "FormatDateTimeGMT(Journal.Date__c,\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\")",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002lk3k",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "003 CstmrCdtTrfInitn.GrpHdr.NbOfTxs",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.NbOfTxs",
+      "s2cor__Property_Value__c": "Journal.Total_Items__c",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002lk52",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "004 CstmrCdtTrfInitn.GrpHdr.CtrlSum",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.CtrlSum",
+      "s2cor__Property_Value__c": "Journal.Total_Gross__c",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaCz",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "014 CstmrCdtTrfInitn.PmtInf.PmtTpInf.InstrPrty",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.PmtTpInf.InstrPrty",
+      "s2cor__Property_Value__c": "\"NORM\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaEM",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "015 CstmrCdtTrfInitn.PmtInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaH6",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "016 CstmrCdtTrfInitn.PmtInf.ReqdExctnDt",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.ReqdExctnDt",
+      "s2cor__Property_Value__c": "FormatDateTimeGMT(Journal.Date__c,\"yyyy-MM-dd\")",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaIY",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "017 CstmrCdtTrfInitn.PmtInf.Dbtr.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.Nm",
+      "s2cor__Property_Value__c": "Company.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaJg",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "019 CstmrCdtTrfInitn.PmtInf.Dbtr.PstlAdr.AdrLine",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.PstlAdr.AdrLine",
+      "s2cor__Property_Value__c": "Company.Address__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaJM",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "018 CstmrCdtTrfInitn.PmtInf.Dbtr.PstlAdr.Ctry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.PstlAdr.Ctry",
+      "s2cor__Property_Value__c": "Company.Country_Code__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaKo",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "020 CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.Id",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.Id",
+      "s2cor__Property_Value__c": "Company.VAT_Registration_Number__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaLN",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "021 CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaN9",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "022 CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.Issr",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.Dbtr.Id.OrgId.Othr.Issr",
+      "s2cor__Property_Value__c": "\"ISO\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaPA",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "023 CstmrCdtTrfInitn.PmtInf.DbtrAcct.Id.IBAN",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.DbtrAcct.Id.IBAN",
+      "s2cor__Property_Value__c": "BankAccount.IBAN__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaPy",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "024 CstmrCdtTrfInitn.PmtInf.DbtrAgt.FinInstnId.BIC",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.DbtrAgt.FinInstnId.BIC",
+      "s2cor__Property_Value__c": "BankAccount.BIC__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zaRL",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "025 CstmrCdtTrfInitn.PmtInf.ChrgBr",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.ChrgBr",
+      "s2cor__Property_Value__c": "\"SLEV\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zgzc",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "026 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtId.InstrId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtId.InstrId",
+      "s2cor__Property_Value__c": "Item.Id",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zh0u",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "028 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtTpInf.SvcLvl.Cd",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zh0V",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "027 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtId.EndToEndId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.PmtId.EndToEndId",
+      "s2cor__Property_Value__c": "Item.Id",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zh1E",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "029 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Amt.InstdAmt",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Amt.InstdAmt",
+      "s2cor__Property_Value__c": "Item.Amount__c",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zh4w",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "030 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Amt.InstdAmt.[Ccy]",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Amt.InstdAmt.[Ccy]",
+      "s2cor__Property_Value__c": "Journal.Currency__r.Currency_Code__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002ziv0",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "032 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.XchgRateInf",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.XchgRateInf",
+      "s2cor__Property_Value__c": "Journal.Exchange_Rate__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zjmc",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "034 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.CdtrAgt.FinInstnId.BIC",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.CdtrAgt.FinInstnId.BIC",
+      "s2cor__Property_Value__c": "SupplierBankAccount.BIC__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zjo8",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "035 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Cdtr.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Cdtr.Nm",
+      "s2cor__Property_Value__c": "Supplier.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zkvD",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "038 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.CdtrAcct.Id.IBAN",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.CdtrAcct.Id.IBAN",
+      "s2cor__Property_Value__c": "SupplierBankAccount.IBAN__c",
+      "s2cor__Regex__c": "*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zkzP",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "039 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.RmtInf.Ustrd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.RmtInf.Ustrd",
+      "s2cor__Property_Value__c": "PurchaseInvoiceNumber.Name",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zl0S",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "036 CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Cdtr.Nm.PstlAdr.AdrLine",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CdtTrfTxInf.Cdtr.PstlAdr.AdrLine",
+      "s2cor__Property_Value__c": "AddressFull(Supplier.Account__r.BillingAddress)",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Item",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zXFM",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "005 CstmrCdtTrfInitn.GrpHdr.InitgPty.Nm",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.InitgPty.Nm",
+      "s2cor__Property_Value__c": "Company.Name",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZj2",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "006 CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Id",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Id",
+      "s2cor__Property_Value__c": "Company.VAT_Registration_Number__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZl3",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "007 CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.SchmeNm.Prtry",
+      "s2cor__Property_Value__c": "\"SEPA\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZoi",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "008 CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Issr",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.GrpHdr.InitgPty.Id.OrgId.Othr.Issr",
+      "s2cor__Property_Value__c": "\"ISO\"",
+      "s2cor__Regex__c": ".*",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZpq",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "009 CstmrCdtTrfInitn.PmtInf.PmtInfId",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.PmtInfId",
+      "s2cor__Property_Value__c": "Journal.Id",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZr3",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "010 CstmrCdtTrfInitn.PmtInf.PmtMtd",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.PmtMtd",
+      "s2cor__Property_Value__c": "\"TRF\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZrw",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "011 CstmrCdtTrfInitn.PmtInf.BtchBookg",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.BtchBookg",
+      "s2cor__Property_Value__c": "\"false\"",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZsV",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "012 CstmrCdtTrfInitn.PmtInf.NbOfTxs",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.NbOfTxs",
+      "s2cor__Property_Value__c": "Journal.Total_Items__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    },
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_FeedBrokerRule__c"
+      },
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "s2cor__UID__c": "00D58000000dW8ua0G58000002zZtx",
+      "s2cor__Feed_Broker__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Broker__c"
+        },
+        "s2cor__UID__c": "s2cor.Sage_ACC_SEPA_Credit_Transfer_Addon"
+      },
+      "s2cor__Feed_Rule_Set__r": {
+        "attributes": {
+          "type": "s2cor__Sage_ACC_Feed_Rule_Set__c"
+        },
+        "s2cor__UID__c": "SEPA_Credit_Transfer_XML_Definition_Rule_Set _Standard"
+      },
+      "Name": "013 CstmrCdtTrfInitn.PmtInf.CtrlSum",
+      "s2cor__Description__c": null,
+      "s2cor__Priority__c": "1 - Low",
+      "s2cor__Property_Name__c": "CstmrCdtTrfInitn.PmtInf.CtrlSum",
+      "s2cor__Property_Value__c": "Journal.Total_Gross__c",
+      "s2cor__Regex__c": "*.",
+      "s2cor__Rule_Resolver__c": null,
+      "s2cor__TargetProperty__c": "Header",
+      "s2cor__Format__c": null
+    }
+  ],
+  "ExportDate": "2016-12-20T15:51:18.022Z",
+  "ExpansionTypes": [],
+  "ExpansionTypeRules": [],
+  "Dimensions": [
+    {
+      "attributes": {
+        "type": "s2cor__Sage_ACC_Dimension__c"
+      },
+      "s2cor__UID__c": "Mandate",
+      "s2cor__Template__r": {
+        "attributes": {
+          "type": "s2cor__Sage_COR_Template__c"
+        },
+        "s2cor__UID__c": "SEPA_UK_Payments"
+      },
+      "Name": "SEPA Mandate",
+      "s2cor__Allow_New_Values__c": false,
+      "s2cor__Area__c": "None",
+      "s2cor__Auto_Number_Format__c": "{0000}",
+      "s2cor__Auto_Number_Key__c": null,
+      "s2cor__Auto_Number_Start__c": 1,
+      "s2cor__Description__c": "To introduce the Mandates from customers for payments by SEPA Direct Debits",
+      "s2cor__Is_Posting_Rule_Mapping__c": false,
+      "s2cor__Is_Public__c": true,
+      "s2cor__Is_Reconcilable__c": false,
+      "s2cor__Is_Universal__c": false,
+      "s2cor__Key__c": "SEPA Mandate",
+      "s2cor__Level_1__c": null,
+      "s2cor__Level_2__c": null,
+      "s2cor__Maintain_Period_Values__c": false,
+      "s2cor__Maintain_Unit_Values__c": false,
+      "s2cor__Number__c": null,
+      "s2cor__Plural_Name__c": "SEPA Mandates",
+      "s2cor__Protect_Posting__c": false,
+      "s2cor__Show_On_Mobile_Menu__c": false,
+      "s2cor__Statement_Report__c": null,
+      "s2cor__Treat_Credit_As_Positive__c": false,
+      "s2cor__Type__c": null,
+      "s2cor__Code_Format__c": null
+    }
+  ],
+  "DimensionRules": [],
+  "DimensionProperties": [],
+  "Currencies": [],
+  "Companies": [],
+  "ClientServices": [],
+  "Actions": []
+}
